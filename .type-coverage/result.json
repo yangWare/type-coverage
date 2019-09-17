@@ -19,9 +19,9 @@
       "anys": []
     },
     "packages/core/src/interfaces.ts": {
-      "hash": "cbaab643d42a0f3f5c62f4205d9eaf69cb7d865c",
-      "correctCount": 56,
-      "totalCount": 56,
+      "hash": "ad1bd73abc5d388045b3d8573b43b59efba8b7c5",
+      "correctCount": 57,
+      "totalCount": 57,
       "anys": []
     },
     "packages/core/src/checker.ts": {
@@ -49,9 +49,9 @@
       "anys": []
     },
     "packages/core/src/core.ts": {
-      "hash": "a8ae742fc265dc691a07d941262d3bfb44dd1fd5",
-      "correctCount": 243,
-      "totalCount": 243,
+      "hash": "57026c5917e889d3f308f8a45aed27c35c508e32",
+      "correctCount": 278,
+      "totalCount": 278,
       "anys": []
     },
     "packages/core/src/index.ts": {
@@ -95,6 +95,53 @@
       "correctCount": 14,
       "totalCount": 14,
       "anys": []
+    },
+    "packages/core/src/vueHost.ts": {
+      "hash": "2d557aa41c8f0fd1b9c3d1ecc646070cd9d7ad70",
+      "correctCount": 213,
+      "totalCount": 221,
+      "anys": [
+        {
+          "line": 69,
+          "character": 12,
+          "text": "langUpper"
+        },
+        {
+          "line": 70,
+          "character": 12,
+          "text": "contentLang"
+        },
+        {
+          "line": 70,
+          "character": 45,
+          "text": "langUpper"
+        },
+        {
+          "line": 71,
+          "character": 82,
+          "text": "contentLang"
+        },
+        {
+          "line": 78,
+          "character": 10,
+          "text": "resolvedModules"
+        },
+        {
+          "line": 106,
+          "character": 8,
+          "text": "resolvedModules"
+        },
+        {
+          "line": 112,
+          "character": 10,
+          "text": "resolvedModules"
+        },
+        {
+          "line": 118,
+          "character": 10,
+          "text": "resolvedModules"
+        }
+      ]
     }
   }
 }

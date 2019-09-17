@@ -14,6 +14,7 @@ import { checkNode } from './checker'
 import { clearCacheOfDependencies, collectDependencies } from './dependencies'
 import { collectIgnoreMap } from './ignore'
 import { readCache, getFileHash, saveCache } from './cache'
+import createHost from './vueHost'
 
 /**
  * @public
@@ -22,7 +23,9 @@ export async function lint(project: string, options?: Partial<LintOptions>) {
   const lintOptions = { ...defaultLintOptions, ...options }
   const { rootNames, compilerOptions } = await getProjectRootNamesAndCompilerOptions(project)
 
-  const program = ts.createProgram(rootNames, compilerOptions, undefined, lintOptions.oldProgram)
+  const host = createHost(compilerOptions)
+
+  const program = ts.createProgram(rootNames, compilerOptions, host, lintOptions.oldProgram)
   const checker = program.getTypeChecker()
 
   const allFiles = new Set<string>()
